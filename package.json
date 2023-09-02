@@ -1,0 +1,11 @@
+{
+  "name": "syapi",
+  "version": "1.0.0",
+  "description": "api and server for syclone ",
+  "main": "index.tsx",
+  "scripts": {
+    "test": "start "
+  },
+  "author": "anuj",
+  "license": "ISC"
+}
