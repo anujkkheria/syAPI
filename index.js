@@ -1,11 +1,13 @@
 const express = require('express')
 const dotenv = require('dotenv')
+const cors = require('cors')
 const authRouter = require('./routes/auth')
 const DB = require('./DB')
 const port = process.env.PORT
 
 const app = express()
 dotenv.config()
+app.use(cors())
 app.use(express.json())
 app.use('/auth', authRouter)
 app.use((err, req, res, next) => {
